@@ -12,12 +12,9 @@ def finder(file, key_word):
         key_len = len(key_word)
         str_file = TextFile.read()
         while 1:
-            # print("1.In ", file[1], "index: ", index)
             start = index
             index = str_file.find(key_word, start)
-            # print("2.In ", file[1], "index: ", index)
-            # print("key_word ", key_word)
-            # print("str_file ", str_file)
+
             if ( index == -1 ) :
                 break;
             elif(index == 0 and len(str_file) != key_len):
